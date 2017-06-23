@@ -8,8 +8,8 @@ StopHotkey=123
 StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
-MacroID=790f78ab-5bc0-46a3-8c9f-773a150a3b52
-Description=²âÊÔ2
+MacroID=75d3a2f4-3f3f-4f8a-9c6a-7d003da6340a
+Description=æµ‹è¯•2
 Enable=1
 AutoRun=0
 [Repeat]
@@ -24,5 +24,6 @@ SetupOCXFile=
 
 [Script]
 For i = 0 To 10
-	TracePrint "ÄãºÃ£¬ÊÀ½ç£¡"
+	TracePrint "ä½ å¥½ï¼Œä¸–ç•Œ"
 Next
+
