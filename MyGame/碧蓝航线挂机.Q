@@ -10,7 +10,7 @@ RunOnce=1
 EnableWindow=
 MacroID=cbf0adc5-ece5-4ef1-8fdd-19d535f8969f
 Description=碧蓝航线挂机
-Enable=0
+Enable=1
 AutoRun=0
 [Repeat]
 Type=0
@@ -52,19 +52,19 @@ gB = Clng(clientCoordinates(3))
 
 
 
-Const TIMES = 30
-Call ShuaShuaShua(1, "关卡01-04", TIMES)
+Const TIMES = 20
+Call ShuaShuaShua(1, "关卡01-04", "起始坐标01-04", TIMES)
 Plugin.Sys.ExitOS(1)
 
 '************************** 运行区域 **************************
 
-Sub ShuaShuaShua(chapter, fightId, iTimes)
+Sub ShuaShuaShua(chapter, fightId, starPoint, iTimes)
     Call ChooseChapter(1)
     For TIMES    
-        Call ChooseFight("关卡01-04")
+        Call ChooseFight(fightId)
         Do
             If GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.7) Then 
-                Call BeginFight(fightId, True)
+                Call BeginFight(starPoint, True)
                 Delay 1000
             Else 
             	Exit Do

@@ -10,7 +10,7 @@ RunOnce=1
 EnableWindow=
 MacroID=4ae142e6-0814-4401-a36b-7bce7e357cb5
 Description=碧蓝航线数据导出
-Enable=1
+Enable=0
 AutoRun=0
 [Repeat]
 Type=0
