@@ -67,7 +67,7 @@ Sub ShuaShuaShua(chapter, fightId, starPoint, iTimes)
                 Call BeginFight(starPoint, True)
                 Delay 1000
             Else 
-            	Exit Do
+                Exit Do
             End If
         Loop
     Next 
@@ -131,6 +131,11 @@ Sub CheckAmbush(isSkipAmbush)
     If GameFindPic(405, 375, 585, 425, "Attachment:\迎击.bmp", 0.5) Then 
         If isSkipAmbush Then 
             Call GameClickByConfig("战斗", "规避", 0, 0)
+            Delay 2000
+            If GameFindPic(725, 555, 960, 640, "Attachment:\fight_button.bmp", 0.7) Then 
+                Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+                Call Fight()
+            End If    
         Else 
             Call GameClickByConfig("战斗", "迎击", 0, 0)
             Call GameClickByConfig("战斗", "开始战斗", 0, 0)
@@ -160,9 +165,9 @@ Sub Fight()
 End Sub
 
 Sub AmbushMission()
-	If GameFindPic(435, 470, 590, 515, "Attachment:\紧急任务.bmp", 0.5) Then 
-		Call GameClickByConfig("战斗", "紧急任务确认", 0, 0)
-	End If
+    If GameFindPic(435, 470, 590, 515, "Attachment:\紧急任务.bmp", 0.5) Then 
+        Call GameClickByConfig("战斗", "紧急任务确认", 0, 0)
+    End If
 End Sub
 
 Sub MoveAndClick(x, y, moveDelay, clickDealy)
