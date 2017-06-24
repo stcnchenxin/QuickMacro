@@ -1,0 +1,113 @@
+[General]
+SyntaxVersion=2
+BeginHotkey=121
+BeginHotkeyMod=0
+PauseHotkey=0
+PauseHotkeyMod=0
+StopHotkey=123
+StopHotkeyMod=0
+RunOnce=1
+EnableWindow=
+MacroID=456c9da9-1270-493b-a71b-1d8dc24e6246
+Description=游戏脚本_自动备份
+Enable=1
+AutoRun=0
+[Repeat]
+Type=0
+Number=1
+[SetupUI]
+Type=2
+QUI=
+[Relative]
+SetupOCXFile=
+[Comment]
+
+[Script]
+'分辨率为800*600
+'************************初始化区域************************* 
+'常量定义
+Const ORDER_BD_JINENG_PATH = "C:\Q6指令\被动技能.txt"
+Const ORDER_HUOBAN_SUIPIAN_PATH = "C:\Q6指令\伙伴碎片.txt"
+Const ORDER_YANSHI_ZHANGHAO_PATH = "C:\Q6指令\演示账号.txt"
+Const ORDER_ZAOXING_LIEBIAO_PATH = "C:\Q6指令\造型列表.txt"
+Const ORDER_ZHANDOU_CESHI_PATH = "C:\Q6指令\战斗测试.txt"
+
+
+'句柄操作
+//Hwnd = Plugin.Window.Find("UnityWndClass", "game.q6")
+Hwnd = Plugin.Window.MousePoint()
+sRect = Plugin.Window.GetClientRect(Hwnd)
+Dim MyArray
+MyArray = Split(sRect, "|")  '分割函数，将第一个参数（字符串）分割成数组储存，标识为第2个参数
+L = Clng(MyArray(0))
+T = Clng(MyArray(1))  
+R = Clng(MyArray(2))
+B = Clng(MyArray(3))
+Delay 200
+'************************初始化区域*************************
+
+
+
+
+'*************************运行区域***************************
+
+Call ModelingTest(ORDER_ZAOXING_LIEBIAO_PATH)
+
+'**************************运行区域**************************
+
+
+
+'**************************函数声明区域*******************************
+//子程 
+'循环输入改变造型的指令，会读取造型文件的数据依次输入造型进行测试,参数为指令文件路径
+Sub ModelingTest(orderPath)	
+	tempTest = GetTxtString( orderPath )
+	modelingNum = Split(tempTest, "|")
+	TracePrint Ubound( modelingNum )
+	For i = 0 To ( Ubound( modelingNum ) - 1 )
+		Call InputOrder("$bian " & modelingNum(i))
+		Delay 2000
+	Next 	
+End Sub
+
+'输入指令并点击确定，参数为指令内容
+Sub InputOrder( orderContent )
+	Call GameClick( 525, 210, 800 )'指令输入框
+	Call InputString( orderContent )
+	Call GameClick( 590, 210, 800 )'指令确认按钮
+End Sub
+
+'相对于游戏窗口坐标进行点击，参数分别为游戏窗口x轴坐标，y轴坐标，移动后延时时间
+Sub GameClick( x, y, delayTimes )
+    MoveTo L + x, T + y
+    Delay delayTimes
+    LeftClick 1
+    Delay 300
+End Sub
+
+'输入文本，参数为文本内容
+Sub InputString( str )
+	SayString str
+	Delay 300
+End Sub
+
+//函数 
+'获取txt文本内容返回函数调用处，参数为txt文本路径
+Function GetTxtString( strPath )
+	GetTxtString = Plugin.File.ReadFileEx( strPath )
+End Function
+'**************************函数声明区域*******************************
+
+
+
+/**************************** 一些坐标记录 ****************************
+--------------指令------------
+Call GameClick( 525, 210, 800 )	'指令输入框
+Call GameClick( 590, 210, 800 )	'指令确认按钮
+Call GameClick( 645, 165, 800 )	'指令框关闭按钮
+------------------------------
+
+
+
+
+**************************** 一些坐标记录  ****************************/
