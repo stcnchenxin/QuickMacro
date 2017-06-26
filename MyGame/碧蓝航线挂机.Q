@@ -55,6 +55,8 @@ Call AutoSalvageBoat(3, "关卡03-04", "起始坐标03-04", g_TIMES)
 gFightTimes = 0
 gRetreatTimes = 0
 
+
+
 //关机
 //Plugin.Sys.ExitOS(1)
 
@@ -66,13 +68,15 @@ Sub AutoSalvageBoat(chapter, fightId, starPoint, iTimes)
         Call ChooseFight(fightId)
         gFightTimes = 0
         Do
+        	Delay 3500
             If CheckIsInFightPnl() Then 
                 Call BeginFight(starPoint, True)
                 Delay 1000
             ElseIf CheckIsInEnterFightPnl() Then 
                 Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                 Call Fight()
-            Else
+            Else 
+            	TracePrint "为毛我退出来了？"
                 Exit Do
             End If
         Loop
@@ -104,7 +108,8 @@ Sub BeginFight(starPoint, isSkipAmbush)
     '是否整个关卡攻略完成
     If Not CheckIsInFightPnl() Then 
         Call CheckAmbush(isSkipAmbush)
-        If Not CheckIsInFightPnl() Then 
+        If Not CheckIsInFightPnl()  Then 
+        	TracePrint "我在这里退出了。"
             Exit Sub
         End If
     End If
@@ -116,26 +121,35 @@ Sub BeginFight(starPoint, isSkipAmbush)
 	
     Dim iOvertimeValue
     iOvertimeValue = 0
+    
+    Dim iCheck
+    iCheck = ""
     Do
         '是否被空袭
-        Call CheckAmbush(isSkipAmbush)        
-        
+        Call CheckAmbush(isSkipAmbush)                
         '这里需要进行判断是否切换舰队
-        If gFightTimes <= g_CHANGE_FLEET_SETTING_TIMES Then 
+        If gFightTimes < g_CHANGE_FLEET_SETTING_TIMES Then 
             If Not CheckIsFleet2() Then
                 TracePrint "第二舰队次数未满，当前为第2舰队，切换舰队"
+                Call ChangeBoatSetting()
+            End If
+        Else 
+            If CheckIsFleet2() Then 
+                TracePrint "切回第一舰队"
                 Call ChangeBoatSetting()
             End If
         End If
         
         '检查敌人并进入战斗
         If CheckEnemy(isSkipAmbush) Then 
+            iCheck = "000"
             Exit Do
         Else 
             Call ChangeBoatSetting()
             Call ChangeBoatSetting()
             
             If CheckEnemy(isSkipAmbush) Then 
+                iCheck = "111"
                 Exit Do
             Else 
                 Call GameClickByConfig("选择关卡", starPoint, 0, 0)
@@ -144,6 +158,7 @@ Sub BeginFight(starPoint, isSkipAmbush)
                 If CheckIsInEnterFightPnl() Then 
                     Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                     Call Fight()
+                    iCheck = "222"
                     Exit Do
                 End If
                 
@@ -159,12 +174,13 @@ Sub BeginFight(starPoint, isSkipAmbush)
         End If
         iOvertimeValue = iOvertimeValue + 1
     Loop
-    TracePrint "跳出循环：" & Time()
+    
+    TracePrint "跳出循环：" & Time() & "---" & iCheck
 End Sub
 
 '检查当前舰队是否为舰队2
 Function CheckIsFleet2()
-    If GameFindPic(155, 140, 185, 180, "Attachment:\舰队2.bmp", 0.5) Then 
+    If GameFindPic(155, 140, 185, 180, "Attachment:\舰队2.bmp", 0.8) Then 
         CheckIsFleet2 = True
     Else 
         CheckIsFleet2 = False
@@ -201,9 +217,9 @@ Function CheckIsFightEnd()
     End If
 End Function
 
-'检查释放在战斗关卡选择界面
+'检查是否在战斗关卡选择界面
 Function CheckIsInFightPnl()
-    If GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.4) Then 
+    If GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.3) Then 
         CheckIsInFightPnl = True
     Else 
         CheckIsInFightPnl = False
@@ -216,7 +232,7 @@ Sub CheckAmbush(isSkipAmbush)
         TracePrint "进入规避了"
         If isSkipAmbush Then 
             Call GameClickByConfig("战斗", "规避", 0, 0)
-            Delay 2000
+            Delay 3000
             If CheckIsInEnterFightPnl() Then 
                 Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                 Call Fight()
@@ -231,7 +247,7 @@ End Sub
 
 '检查是否可以点击进入战斗
 Function CheckIsInEnterFightPnl()
-    If GameFindPic(725, 555, 960, 640, "Attachment:\fight_button.bmp", 0.7) Then 
+    If GameFindPic(725, 555, 960, 640, "Attachment:\fight_button.bmp", 0.5) Then 
         CheckIsInEnterFightPnl = True
     Else 
         CheckIsInEnterFightPnl = False
