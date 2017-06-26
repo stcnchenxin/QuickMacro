@@ -23,21 +23,193 @@ SetupOCXFile=
 [Comment]
 
 [UIPackage]
-UEsDBBQAAgAIAFil2Upbotu/sQUAAAhIAAAJABEAVUlQYWNrYWdlVVQNAAckIFBZJCBQWSQgUFntW0lTVFcYPU2DNEOYwqCAigMa0UQEFKdEhYASmRQ0QyWp6iCJVJqG6m4i2SXbLPIb4jobTSX/IlVJ5RfoIstUFqlyF8i5b7AvFJR3gltd4bM+X9v07fPu8A3nPEkitN9/a3z2+Gn7c2yyd5DE2noV9knvJSIPrAEoi/69tr6+Hr+9vmclZf/Sy6M9FHtdQa+kV9FT9Gr6a/Qaei29Ltx61NMb6a/Tm+jN9FZ6C72NfoC+n95O76R30A/SD9MP0bvoR+lHIuy1va3wYnexxD8F7scIsrzm8DV0rJUnJv6uxCs++8N3fz968tcfiSRff9McvncPY+iFuaWQSMT4ra/Aja/yz4Yxi3GLO6iW8CsM8Ge53suYxyTSWORV15pQFuA3RrlXdVx5dI1jb8/tvFRtdCm3aBF+EOPPWYxPwM5sx9vaz09+/dNm/hohuyPjTfNOMf+Vbej5VPcszpWi6qTxGTKG91DH/FcT9Smq+GVS/ruPBeTppnfQYDD/pIR/l6hpPMAU1yGjWXvj/F8bfacqfrmEP0v8VdZ9i/1P6M6/Qtr/YXYfGXrO8E6aDfD3SfMv4g9xH+bwpT5+0C/Xa6x/5ab9n7Ncf9GfpzTwUwh7eNk+YVC8QOlZpWf8F1uveVCWJma6ZtLZfNfMfG7h8x3C7/7xU6vxHzHz5Jh/5vm3iYn82xLFlOr5q5LO/zhjTz/qNp7/huj7VPGrt4z/Gd7HQ66DXjXcz/iPObAqfo2Ef4Pd/3JQA3L0LO9Brwq1cv5VCHm5Kn6thD/KuWft8o92/RP56urL+WdYfb/gPYh1z5rkf238ug37n+b6F3gPYh2Ggn2IK0HxbGxvbxjUn3oJfyj4/jD+VPC2OH+JZhR1N5UxDRK+bf6w7T9tbSy7vFIYWlo1HZ8vpHPLSwvZwgdm40udv8zy5BeC3tfk9AX5Rzv+GqXzN038VaJn2IWbWJ0BftOG+Bf6jzmDE/qP4BNnEGqeW9lu6D/dUM//ol6lotc++F8zwhoszAX/izVlVfwWOOV/iS5eT2jgt8It/xMae5sGfhv88j/xXCD5Mv6s+Z/2+TsAt/xPPNs4prH+7XDL/8QzlE4N/A4U+d9Ar436bm+2/YPoI8VzpZ+CvdQ33/U36RnfAf/Tjr9OuOV/x6Ocoop/EG753ykIHqCOfwhu+d9JhM9SVfEPwy//64Jf/ncEcv+ZZv3P41HEw3StyQD/qIQ/gRWugOCf4/Ssdg8i9E9xnk9r7P8xCd+3fuXbbPlvzy8PrcZ3PJ71Ov/J4NwvMgoyxvqD7vk/Lp2/W8T7ylj9CPNfD/T0j+5N+W+OMZjfRf57QsIXVScXIGci9Wnn899JbOa/fcbnJ/7/D0N8fXabz+wG/72ikf9ErfbJf0/BLf89z+uAxvx7pP13pp99aDa+1PWz8yXOn1zoHxcQ9nOq5+803OofYgfe1MA/A7/6h7hXn/rHW3Crfwj19JLG+p+FW/1jkNc+DfxeFPUPH/z3HNzy38vRnqri90n4b9OX6E/p3xvgl8Gv+dZPSp0/udA/rkH8voD6+euHW/1DnOGLGvgD8Kt/iH7Np/5xAX71j0G41T/6g3VU3/+LEr4P/nsJbvnvdejx38sSvq393/UTW/6USz9YWMmb49vyHx/6xxX41T+uYrP+0W+8ftXcgRh7ZJvP7Ib+cUcj/4l66VP/EL1C/HuFLvSP27y+pzH/a3D7/H8cgseo41+HW/47ivDZpyr+DQnft34y6Fc+sdZP/oni6Vsu5McG433zFx/6h9CKY97oQ/8Yhlv94yavUxrx9y7c6h8TEH2kOv4I/Oofo3Crf0xHa6qKfxNun//fC+JIHf8W3PLfGYg6ro4/JuHv6Sd+zTd/8qF/iF7Np/5xG371j3G41T9EPL+vEf8T8Kt/TMKt/nEfevrHFPw+/5+GX/57R8L3rZ/smV/7D1BLAQIXCxQAAgAIAFil2Upbotu/sQUAAAhIAAAJAAkAAAAAAAAAAAAAgAAAAABVSVBhY2thZ2VVVAUAByQgUFlQSwUGAAAAAAEAAQBAAAAA6QUAAAAA
+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
 
 
 [Script]
-If not (2)  Then 
+//Call Test(200, 300, 30, 30, "上", "逆时针", 2)
+//Call Test(500, 300, 30, 30, "下", "逆时针", 2)
+//Call Test(800, 300, 30, 30, "左", "逆时针", 2)
+//Call Test(1100, 300, 30, 30, "右", "逆时针", 2)
+//Call Test(200, 600, 30, 30, "上", "顺时针", 2)
+//Call Test(500, 600, 30, 30, "下", "顺时针", 2)
+//Call Test(800, 600, 30, 30, "左", "顺时针", 2)
+//Call Test(1100, 600, 30, 30, "右", "顺时针", 2)
+Call Test(1100, 600, 30, 30, "上", "顺时针", 2, 10)
 
-    MessageBox "aaa"
+Sub Test(starPointX, starPointY, offectLengthX, offectLengthY, directionValue, rotationType, rotationTimes, posNums)
+    '
+    Dim direx, direy, rotax, rotay, iDRArr	
+    iDRArr = Split(InitDirectionAndRotation(directionValue, rotationType), "|")
+    direx = iDRArr(0)
+    direy = iDRArr(1)
+    rotax = iDRArr(2)
+    rotay = iDRArr(3)
+    
+    Dim x, y
+    x = 0
+    y = 0
+	
+	
+    Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+	
+    LeftDown 1
+	
+    If rotationTimes >= 1 And posNums >= 2 Then
+        x = x + direx
+        y = y + direy
+        Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+    End If
+    
+    Dim turnsNum
+    turnsNum = 1
+    posNum = 2
+    If x = 0 Then 
+        For rotationTimes
+            While Abs(x + rotax) <= turnsNum
+                If posNum >= posNums Then 
+                    Exit For
+                End If
+                x = x + rotax
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+                posNum = posNum + 1
 
-Else 
-    MessageBox "bbb"
+            Wend
+				
+            While Abs(y + rotay) <= turnsNum
+                If posNum >= posNums Then 
+                    Exit For
+                End If
+                y = y + rotay
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+                posNum = posNum + 1
+            
+            Wend
+				
+            While Abs(x - rotax) <= turnsNum
+                If posNum >= posNums Then 
+                    Exit For
+                End If
+                x = x - rotax
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+                posNum = posNum + 1
 
-End If
+            Wend
+				
+            While Abs(y - rotay) <= turnsNum
+                If posNum >= posNums Then 
+                    Exit For
+                End If
+                y = y - rotay
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+                posNum = posNum + 1
+
+            Wend
+            
+            If ((Abs(x) + Abs(y) + 1) ^ 2) = ((2 * turnsNum + 1) ^ 2) And turnsNum < rotationTimes Then 
+                y = y - rotay
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+                turnsNum = turnsNum + 1 	
+            End If  
+        Next
+    End If
+	
+/*    If y = 0 Then 
+        For rotationTimes
+            While Abs(y + rotay) <= turnsNum
+                y = y + rotay
+                TracePrint "y = " & y
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+            Wend
+            TracePrint "x = " & rotax	
+            While Abs(x + rotax) <= turnsNum
+                x = x + rotax
+                
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+            Wend
+				
+            While Abs(y - rotay) <= turnsNum
+                y = y - rotay
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+            Wend
+				
+            While Abs(x - rotax) <= turnsNum
+                x = x - rotax
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+            Wend
+            
+            If ((Abs(x) + Abs(y) + 1) ^ 2) = ((2 * turnsNum + 1) ^ 2) And turnsNum < rotationTimes Then 
+                x = x - rotax
+                Call MoveToTargetPoint(starPointX + x * offectLengthX, starPointY + y * offectLengthY)
+                turnsNum = turnsNum + 1 	
+            End If  
+        Next
+    End If
+    	*/
+    LeftUp 1
+End Sub
 
 
+//TracePrint InitDirectionAndRotation("上", "逆时针")
 
+'确定第一个格子的方向，同时确定旋转方向
+Function InitDirectionAndRotation(directionValue, rotationType)
+    Dim direx, direy, rotax, rotay	
+    Select Case directionValue
+    Case "上"
+        direx = 0
+        direy = -1 
+        rotay = 1
+        If rotationType = "顺时针" Then 
+            rotax = 1	
+        ElseIf rotationType = "逆时针" Then
+            rotax = -1
+        Else 
+            TracePrint "旋转方向错误。"
+        End If
+    Case "下"
+        direx = 0
+        direy = 1
+        rotay = -1
+        If rotationType = "顺时针" Then 
+            rotax = -1
+        ElseIf rotationType = "逆时针" Then
+            rotax = 1
+        Else 
+            TracePrint "旋转方向错误。"
+        End If			
+    Case "左"
+        direx = -1 
+        direy = 0
+        rotax = 1
+        If rotationType = "顺时针" Then 
+            rotay = -1
+        ElseIf rotationType = "逆时针" Then
+            rotay = 1
+        Else 
+            TracePrint "旋转方向错误。"
+        End If			
+    Case "右"
+        direx = 1 
+        direy = 0
+        rotax = -1
+        If rotationType = "顺时针" Then 
+            rotay = 1	
+        ElseIf rotationType = "逆时针" Then
+            rotay = -1
+        Else 
+            TracePrint "旋转方向错误。"
+        End If			
+    Case Else
+        TracePrint "没有这种方向。"
+    End Select
+    InitDirectionAndRotation = direx & "|" & direy & "|" & rotax & "|" & rotay
+End Function
+
+Sub MoveToTargetPoint(x, y)
+    MoveTo x, y
+    Delay 300
+End Sub
 
 
 
@@ -94,21 +266,3 @@ End If
 //
 //
 //LeftUp 1
-
-Call Test(1920 / 2, 1080 / 2, 100, 100, 0, 0)
-
-Sub Test(starPointX, starPointY, offectLengthX, offectLengthY, directionValue, rotationType)
-	
-	
-	//MoveTo starPointX, starPointY
-
-	Dim x, y
-	x = 0
-	y = 0
-	
-	For 9
-		TracePrint "(" & x & ", " & y & ")"
-		x = x + 1
-	Next
-
-End Sub
