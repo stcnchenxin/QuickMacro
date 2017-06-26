@@ -23,7 +23,7 @@ SetupOCXFile=
 [Comment]
 
 [Attachment]
-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
+UEsDBBQAAgAIAJQ+2ErJbr/fWwMAABIEAAAQABEAZmlnaHRfYnV0dG9uLmJtcFVUDQAHOhpOWToaTlk6Gk5ZZdJnTBNhGMDxM1Ri4qJETkANCBYhREFqWy2ztE6oASyaKBBkuEIjgggpYiVgExEEFUlUilGgULguVmWIKYKIUlEUB8MW+CIguNBC8fr6yqmJ9fJ73ry55P55Plwg15qEzD90OK5w7OAshbMAsZ1/P2iB/PdcqeutGgaEah2QDuIJl5TqZ3qfgAAanX6+6Ka182Zb9olkSX9UrSGqxhClMhxUTh9rBaGFj905kSSShUaZ0actDQpyQyKFWOUQjukBJNMB7B0ukHTKu4e9aH4cjkcpdhu2HAL5GZL+2Ls/outmYhqMx2onk1q+7S9o3+jDI5EsG5QZjztLWSw3JE7UmFn+SgZDeqDQA7nOlNuqq+wadvfw5XLdMWUx2YnqzErIkvQfbgbxTSZ+GzhZ/z61eSriksaDEbJw4aKenuL29lIm0w1JyNcIxD2Y7ncLkg78qO+bgi0ezwtTieFesJVd0Z/WBQgXe0DBS3D4umYNxYdMdnz48KpaXcRguCBC6YvEKx3lb2ZhTq7/pWoIl3YOurhtys/nqxru2Lgw1rNiJM198gEcKnkyKVL3JZe1seMvLFpq5+DgyuGsYzIpKLoYKXn+9UhOCzyrhgCxHXRejKEo2tJy4/Xb++GHjq7e4Hc6UxR2qggKjBOxeac9WbHOm0KtN3CXzVviErzYcTdSOYCbtTCd6ZAgx97efmKia3xc+7z3AY3NpdB3olvSCGt8MwjotvQVOwSQtW8amZqKwI+Ln32GIYhY6mbHEDVwV2Ii/+NH7cSEVqfrZm4PZQZH2zLPolvOQHbeQoINO325f8oy/1NWW1PI1BTkV+XP/6UYBapRPLuw0JFC0Wgqpqa6CXS/kKAIoWdYkQ0jHYIrmLHy4lt5xZu3FMNz/sHB0dHhIyNt/7QihXsE0rCzMmjvOTl0QFS/L0tF3MMzZfuyqs1bPJFk1dq1FfLiv6G/rePixqbJGUgxMgspR+cUI0biLtMbq98ZkeRr6lu905K3c2WvZ8WtHSstLbfSaI9etZu3IoQxeU+V00DxFdR+w+u+4/BUfDHJv5jKx4yK8bnGDzgSnng56bqmsGlUWK4N8OZQnZzWo2hudtLYWOf/LeyTqfIDXm0w1eAAM5jK9DOiewPHSxqP5Ir5eTeQn1BLAwQUAAIACABuP9hK4W39E3kCAAB2BQAAEAARANW9tre94cr4yLfIzy5ibXBVVA0AB+sbTlnrG05Z6xtOWaWUS09aQRTHbxftZ+i2cdNl3XTbpqtC0rpp4hcgIvIMr4KGhd5LeFgWNjQaDYS6ICRghFrlsSAClhREuRtIMOFlIq8IRaHhKfSU2zthYVDTX84kd86czJn/nDP3zTv5Y2zESxjPYTBhPIHxCHs68r/+tz7OcDi8vLw8PDwc0rRarW63S313Op1arVav1/v9PkxdLtf8/LzFYnE4HHw+XywWX11dUZGNRkOlUoFzZ2dHJBJpNJrr62tqaTAYKBSKSqWCUhwdHbFYrI2NjW8PZI+GJEkGgzH1bGqyjfRVq1VIiJIbjcZkMkl9w5JerweJlD632y2RSGw2m06n43K5SqUSiWg2mziOgycYDMIOy8vLpVIJ7RkIBEAlmlqtVqlU6nQ6fzyQEM3Z2dns7Oz0i+nJNtIHxw+Hwyg51ABNLy4uOBxOsVik9Hk8HrlcbjKZIGZ3dzcej1N+Sp9arYYSRiIRu90uFAoTiQTaEzpgOAYUmCAIyHL8QCI0mUyGzWa/ugsMg2uFi4arubm5oZJD76VSKXQu6ApUJK/XK5PJDAYDj8crFArjR4auhqKCvlgsBmWGMGjU4W2k0+m5uTlozth/kMvl4KUw3zInG4bBu8lkstCfSN8EvF6fTP5xbe0zXyDIZrO/adrtNtyEVqtdwYmT03gwFFrBcbPZfOsmkWiUs7Cw930fIu9rCNqTy+cFQuHM+5nJhmH61VWcIPYPDsrl8q8x4MfR6/XQoUAEtLHX51MuLn7d3hZLJBqtVkfzyWCAfeB3s7m1dUqSxycnX9bXIaY/dmfQBPBu/H4/oVYrl5Z+RqMQeS+Lk3+FUdDO/Pk5pPtwFxj2B1BLAwQUAAIACACuQdhKvXIfpcQAAAACAQAACgARAGVuZW15MC5ibXBVVA0AByMfTlkjH05ZIx9OWXPyZWJkAAMzINYAYjEgZgZiRgYJsPgZBkzgcvcfAl3/6XLmnc2RZ4oTVguJiEibW7nc/Q9BkY+/xTz5CkSSM1byGFvKFnWY738IVAxEDAz+l7+6XfsBQd6Xv4acfut7+Kle/yohCSlpv0SXK98gKODm50Aw0lu6X8zKWaGg1X7/w4DzH31BZkSffut16QsQeVz45HX8Zejuu35bruk3zROWUVTNmwCxCYjcz3+EINct1xSdfJVzm5123g44/tL70BMGBgBQSwMEFAACAAgAQkLYSvpExgwWAgAAjgIAAAgAEQDTrbv3LmJtcFVUDQAHSSBOWUkgTllJIE5Zc/LtY2IAAzMg1oBiViBmZJAAi0dA5ZHBfzD4+PXH3Zfvv/389fffv9b1RzafufEfFXz6+n372Zt29fMFE9qlplwUzp7uVDH51advENnLj16aF08Ub9ktt+GneNMO54b5L95/gkjdefleLqFRtHKN/Oa/MkteCCZ1Vy7bBzd25eHzApGVQOTasiCkf+Wm09cg4j9+/d5z6c7F+0//Ah30///dN5/tq6ZING4QyZniVDnx1aevcHstSvolWrcpbPos0bLFpXEu3F6gd+QT68Wqlytu/S637JFQcnvl8r1we1cfuyiZ2ixfu0iuco5SevP64xch4kDtnm3zKhdu/Pn7D9De5x8+u9dMkKucK1s206N+yuvPUP9effLSrnqSysQ9Bod+q0zY5dWx4OUHqL33Xn9Qy2hSbF1rePS/7tZX0jk99Wv3I+w9fkEmt1N3zU2t+SdVMhq2nbsOs/ejV/uc8vlrf/z+A+S+/PTVs26ifMUMlc61NlUTJu08Nnffqbn7T7Wt32dU0i1fOkW5fbV86WTPttkv3n2EmHD/zUf1zEbZgj6VzjVKTUuk0xpDJ62Yufs4zN6Lsjkduquvay04oZrZsOvynX+gcP3/8v0n7/a5ZfPWQOwFetCrYbJCxTSFyhmyqXXKmU3KWc1ApJTVLJNaL5VSC0TSKbXuLTOfv/sAMfnB208aWY0QKRBKqpZPr1fKaAQAUEsDBBQAAgAIAPJC2Eo6zijYNgIAAL4CAAAQABEA1b22t9Gh1PG958PmLmJtcFVUDQAHbSFOWW0hTlltIU5Zc/Ldx8QABmZArAHEKkDMBsSMDBJg8Q6oPDIIzqx78PDx58+fT124JuGYreGV7ZbRGVI0cdvOIx8+/ACimt7ZoRmV567d/vbt2/W7j4Xsc4Uc8hat3vrhw4dPnz49fPhQPbBawD5PxDEfiDonr/gCAt+eP3+nE1QtYp8LRNIOaQqOyU+ePbOMrNxz4uq7d+8uXLktbJEuZJcDRJJuxV0r974Dg7pJM/TDazYcPfPl27d7j54ZBRbK28clNy9+9fH7izcfbt26pRVSC7RFxjoaiBIbF36FAY+UPmWnIiCSdCoSdio6fPmycVDR1oPngGZeuXFP3qVYyD4HiESd8oomLIXYNXXVBqDKSesPAe16/Py1e3q7gn28VVRVYePEjLrJkRXTZDzLxZwLdJ2TgSgyvx9uV1zVUmS7fAv71dzSVmw9CDTz5t0n5jHdEH8J2WcnN059+/YtUHzxjn1AlTUzVr//+PHJi7e+ub1Af9nE1Dx78ereo6cXr98DovPX7x++8hqITt76CLfrwJFrW3acBaJNB89uOgZC8vb5s5bvBJr5+OnzpLqZAnY5QCRol+ma2nr+9gtgHF248lLEJLmgZubTp89fvXrZMm2FMNidHz78/vr1zzcs4P+3b0Cpr//+/fsPBj9//oRIWER09M5c8/r162fPXxR0LOS3zQMiAdtsoF3nbj8HKrh8/Q0wHPKrpwPtAirrmbcBYteePWfOX3l4/MoDNPT06Tu4XTdu3AOic1ehUgBQSwMEFAACAAgAhlbYSqkpwQdWAQAALgIAAAwAEQC99LyxyM7O8S5ibXBVVA0AB2NETlljRE5ZY0ROWXPy1WNiAAMzINYAYiEg5gRiRgYJsPgPRgYMcP7ha4nY5h0X7v4Hg0M3n26/cO8/NnD9yZudlx/++P0HyAbrk4xr3nkRqu/wzac7YPr+/P337gtQ3V8I98ef/88//fj99y9Mn3Q8dn0Pn79Om7Ty7ot3QPbP33+mbz40e9vRX3+g+h69lk5oQtEHY1++89C8ZNKF+8///fv37eev7EnLCmeugbnzwqNXMgmNCH23nsD1vXj3sWXNvgev3gH1/f33f+q2Yy2r9iD890IpvXn3ZajaY3eewtlAANTx588fCPvV52/nHr3+CdV39t4T1czGXZfvwPQ92XMFqg8YBC8/ff0FC5cP3389+/AFGFhI+nbD9B2/i9B389HTgI7Zt1+8BYXLnz8tK7Y2L9sMs+/jr78rTl65/+otRO2Je0/3XIXqu/7gsXfbrJvPX0PCs37pprolG2D6AFBLAwQUAAIACABETdlKgHb3RBoBAABWAQAACgARAGVuZW15MS5ibXBVVA0AB2qFT1lqhU9ZaoVPWXPyDWNkAAMzINYAYnEgZgFiRgYJsLgCVB4Z2B2653jsERzZ7bhqu/mizsL9Ul6hQlKSagX1tkceAZHrsfshp24CkevOE2xJ+WLyCkozttluvgBUbL/lEtAc19t/nO/8hSOXC59czrwz2HFLMjBeTF5er2mSy93/QORz/0/Mk69A5H3hIVNujbCcoura886n3wIVAxHQnJQTr7wuf/W48g2Cws++jzn1xmPbDeWAeGFDB53e1SCTL3xyv/jJ5woIuZ96odu1BGiOzvKToRc+hV387HviJdCcvMNPfS5+9rr0BYiA5nvtvO27+arl/IOy7qFyzqHmc/ZBbHQ9+979/EcQOvHKbtoWYTkFvaXHvQ4+9j70xGnHTaA5AFBLAQIXCxQAAgAIAJQ+2ErJbr/fWwMAABIEAAAQAAkAAAAAAAAAIACAgQAAAABmaWdodF9idXR0b24uYm1wVVQFAAc6Gk5ZUEsBAhcLFAACAAgAbj/YSuFt/RN5AgAAdgUAABAACQAAAAAAAAAgAICBmgMAANW9tre94cr4yLfIzy5ibXBVVAUAB+sbTllQSwECFwsUAAIACACuQdhKvXIfpcQAAAACAQAACgAJAAAAAAAAACAAgIFSBgAAZW5lbXkwLmJtcFVUBQAHIx9OWVBLAQIXCxQAAgAIAEJC2Er6RMYMFgIAAI4CAAAIAAkAAAAAAAAAIACAgU8HAADTrbv3LmJtcFVUBQAHSSBOWVBLAQIXCxQAAgAIAPJC2Eo6zijYNgIAAL4CAAAQAAkAAAAAAAAAIACAgZwJAADVvba30aHU8b3nw+YuYm1wVVQFAAdtIU5ZUEsBAhcLFAACAAgAhlbYSqkpwQdWAQAALgIAAAwACQAAAAAAAAAgAICBEQwAAL30vLHIzs7xLmJtcFVUBQAHY0ROWVBLAQIXCxQAAgAIAERN2UqAdvdEGgEAAFYBAAAKAAkAAAAAAAAAIACAgaINAABlbmVteTEuYm1wVVQFAAdqhU9ZUEsFBgAAAAAHAAcA2QEAAPUOAAAAAA==
 
 
 [Script]
@@ -52,21 +52,28 @@ gB = Clng(clientCoordinates(3))
 
 
 
-Const TIMES = 20
-Call ShuaShuaShua(1, "关卡01-04", "起始坐标01-04", TIMES)
-Plugin.Sys.ExitOS(1)
+Const TIMES = 30
+Call ShuaShuaShua(3, "关卡03-04", "起始坐标03-04", TIMES)
+gFightTimes = 0
+
+//Plugin.Sys.ExitOS(1)
 
 '************************** 运行区域 **************************
 
 Sub ShuaShuaShua(chapter, fightId, starPoint, iTimes)
-    Call ChooseChapter(1)
+    //Call ChooseChapter(chapter)
     For TIMES    
         Call ChooseFight(fightId)
+        gFightTimes = 0
+        //Call ChangeBoatSetting()
         Do
-            If GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.7) Then 
+            If CheckIsInFightPnl() Then 
                 Call BeginFight(starPoint, True)
                 Delay 1000
-            Else 
+            ElseIf CheckIsInEnterFightPnl() Then 
+                Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+                Call Fight()
+            Else
                 Exit Do
             End If
         Loop
@@ -100,31 +107,104 @@ End Sub
 
 Sub BeginFight(starPoint, isSkipAmbush)
     '是否整个关卡攻略完成
-    If Not GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.7) Then 
+    If Not CheckIsInFightPnl() Then 
         Call CheckAmbush(isSkipAmbush)
-        If Not GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.7) Then 
+        If Not CheckIsInFightPnl() Then 
             Exit Sub
         End If
     End If
-
-    Call GameClickByConfig("选择关卡", starPoint, 0, 0)
 	
+    //    If gFightTimes mod 5 = 0 Then 
+    //        Call ChangeBoatSetting()
+    //    End If
+	
+    If CheckIsInEnterFightPnl() Then 
+        Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+        Call Fight()
+    End If
+	
+    Dim iOvertimeValue
+    iOvertimeValue = 0
     Do
         '是否被空袭
-        Call CheckAmbush(isSkipAmbush)
+        Call CheckAmbush(isSkipAmbush)        
         
-        FindPic gL + 125, gT + 140, gL + 940, gT + 575, "Attachment:\enemy0.bmp", 0.3, intX, intY
+        '这里需要进行判断是否切换舰队
+        If gFightTimes mod 4 = 0 Then 
+            TracePrint gFightTimes & "：满战斗切舰队"
+            Call ChangeBoatSetting()
+        End If
+        
+        '检查敌人并进入战斗
+        If CheckEnemy(isSkipAmbush) Then 
+            Exit Do
+        Else 
+            Call ChangeBoatSetting()
+            Call ChangeBoatSetting()
+            
+            If CheckEnemy(isSkipAmbush) Then 
+                Exit Do
+            Else 
+                TracePrint "看看我是不是误点到这里了。"
+                Call GameClickByConfig("选择关卡", starPoint, 0, 0)
+                
+                '防止回到起始坐标时遇到敌人
+                If CheckIsInEnterFightPnl() Then 
+                    Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+                    Call Fight()
+                    Exit Do
+                End If
+                
+                '超时检测，如果超过一定时间还不能检测到敌人，就撤退
+                If iOvertimeValue >= 2 And CheckIsInFightPnl() Then 
+                    Call GameClickByConfig("战斗", "撤退", 0, 0)
+                    Call GameClickByConfig("战斗", "撤退确认", 0, 0)
+                    Exit Do
+                End If
+            End If
+        End If
+        iOvertimeValue = iOvertimeValue + 1         
+    Loop    
+    TracePrint "BeginFigth 循环跳出: " & Time() 
+End Sub
+
+Function CheckEnemy(isSkipAmbush)
+    Dim enemyPicName
+    enemyPicName = Array("enemy0.bmp", "enemy1.bmp")
+	
+    For Each enemyPic In enemyPicName
+        FindPic gL + 120, gT + 130, gL + 950, gT + 595, "Attachment:\enemy0.bmp", 0.1, intX, intY
         If intX > 0 And intY > 0 Then 
             Call MoveAndClick(intX, intY, 200, 8000)
             Call CheckAmbush(isSkipAmbush)
-            If GameFindPic(725, 555, 960, 640, "Attachment:\fight_button.bmp", 0.7) Then 
+            If CheckIsInEnterFightPnl() Then 
                 Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                 Call Fight()
             End If
-            Exit Do
+            CheckEnemy = True
+            Exit Function
         End If
-    Loop
-End Sub
+    Next
+    CheckEnemy = False
+End Function
+
+Function CheckIsFightEnd()
+    If GameFindPic(820, 565, 950, 600, "Attachment:\战斗结束确认.bmp", 0.5) Then 
+        CheckIsFightEnd = True
+    Else 
+        CheckIsFightEnd = False
+    End If
+End Function
+
+
+Function CheckIsInFightPnl()
+    If GameFindPic(885, 615, 980, 650, "Attachment:\战斗选择界面.bmp", 0.4) Then 
+        CheckIsInFightPnl = True
+    Else 
+        CheckIsInFightPnl = False
+    End If
+End Function
+
 
 '检查是否被空袭，并选择是否迎击
 Sub CheckAmbush(isSkipAmbush)
@@ -132,7 +212,7 @@ Sub CheckAmbush(isSkipAmbush)
         If isSkipAmbush Then 
             Call GameClickByConfig("战斗", "规避", 0, 0)
             Delay 2000
-            If GameFindPic(725, 555, 960, 640, "Attachment:\fight_button.bmp", 0.7) Then 
+            If CheckIsInEnterFightPnl() Then 
                 Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                 Call Fight()
             End If    
@@ -144,8 +224,13 @@ Sub CheckAmbush(isSkipAmbush)
     End If	
 End Sub
 
-
-
+Function CheckIsInEnterFightPnl()
+    If GameFindPic(725, 555, 960, 640, "Attachment:\fight_button.bmp", 0.7) Then 
+        CheckIsInEnterFightPnl = True
+    Else 
+        CheckIsInEnterFightPnl = False
+    End If   
+End Function
 
 Sub Fight()
     Dim iParm
@@ -154,10 +239,11 @@ Sub Fight()
         Call MoveAndClick(gL + 935, gT + 255, 200, 1800)
         iParm = iParm + 1
         If (iParm mod 4) = 0 Then 
-            If GameFindPic(820, 565, 950, 600, "Attachment:\战斗结束确认.bmp", 0.5) Then 
+            If CheckIsFightEnd() Then 
                 Call GameClickByConfig("战斗", "确认奖励", 0, 0)
                 Delay 2000
                 Call AmbushMission()
+                gFightTimes = gFightTimes + 1
                 Exit Sub
             End If
         End If
@@ -169,6 +255,13 @@ Sub AmbushMission()
         Call GameClickByConfig("战斗", "紧急任务确认", 0, 0)
     End If
 End Sub
+
+
+Sub ChangeBoatSetting()
+    Call GameClickByConfig("战斗", "切换舰队", 0, 0)
+    Delay 5000
+End Sub
+
 
 Sub MoveAndClick(x, y, moveDelay, clickDealy)
     MoveTo x, y
@@ -273,3 +366,33 @@ Function GameFindPic(x1, y1, x2, y2, picName, picSim)
 End Function
 
 '**************************函数声明区域*******************************
+/*
+        FindPic gL + 120, gT + 130, gL + 950, gT + 595, "Attachment:\enemy0.bmp", 0.1, intX, intY
+        If intX > 0 And intY > 0 Then 
+            Call MoveAndClick(intX, intY, 200, 8000)
+            Call CheckAmbush(isSkipAmbush)
+            If CheckIsInEnterFightPnl() Then 
+                Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+                Call Fight()
+            End If
+            Exit Do
+            
+        Else 
+            '如果没有界面上没有敌人，先切一下舰队回复一下位置，然后再检查一次，还没有尝试回归起始坐标。
+            Call ChangeBoatSetting()
+            Call ChangeBoatSetting()
+            
+            FindPic gL + 120, gT + 130, gL + 950, gT + 595, "Attachment:\enemy0.bmp", 0.1, intX, intY
+            If intX > 0 And intY > 0 Then 
+                Call MoveAndClick(intX, intY, 200, 8000)
+                Call CheckAmbush(isSkipAmbush)
+                If CheckIsInEnterFightPnl() Then 
+                    Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+                    Call Fight()
+                End If
+                Exit Do
+            Else
+                Call GameClickByConfig("选择关卡", starPoint, 0, 0)
+            End If 
+        End If
+*/
