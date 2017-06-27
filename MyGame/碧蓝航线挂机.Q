@@ -10,7 +10,7 @@ RunOnce=1
 EnableWindow=
 MacroID=cbf0adc5-ece5-4ef1-8fdd-19d535f8969f
 Description=碧蓝航线挂机
-Enable=0
+Enable=1
 AutoRun=0
 [Repeat]
 Type=0
@@ -45,20 +45,15 @@ gR = Clng(clientCoordinates(2))
 gB = Clng(clientCoordinates(3))
 '************************初始化区域*************************
 
-
-
-
 '************************* 运行区域 ***************************
 Const g_CHANGE_FLEET_SETTING_TIMES = 4
-Const g_TIMES = 30
+Const g_TIMES = 10
 Call AutoSalvageBoat(3, "关卡03-04", "起始坐标03-04", g_TIMES)
 gFightTimes = 0
 gRetreatTimes = 0
 
-
-
 //关机
-//Plugin.Sys.ExitOS(1)
+Plugin.Sys.ExitOS(1)
 
 '************************** 运行区域 **************************
 '自动捞船，参数为章节、具体战斗，起始坐标，自动战斗多少轮，参考：AutoSalvageBoat(3, "关卡03-04", "起始坐标03-04", g_TIMES)
@@ -68,7 +63,7 @@ Sub AutoSalvageBoat(chapter, fightId, starPoint, iTimes)
         Call ChooseFight(fightId)
         gFightTimes = 0
         Do
-        	Delay 3500
+            Delay 3500
             If CheckIsInFightPnl() Then 
                 Call BeginFight(starPoint, True)
                 Delay 1000
@@ -76,7 +71,7 @@ Sub AutoSalvageBoat(chapter, fightId, starPoint, iTimes)
                 Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                 Call Fight()
             Else 
-            	TracePrint "为毛我退出来了？"
+                TracePrint "为毛我退出来了？"
                 Exit Do
             End If
         Loop
@@ -109,7 +104,7 @@ Sub BeginFight(starPoint, isSkipAmbush)
     If Not CheckIsInFightPnl() Then 
         Call CheckAmbush(isSkipAmbush)
         If Not CheckIsInFightPnl()  Then 
-        	TracePrint "我在这里退出了。"
+            TracePrint "我在这里退出了。"
             Exit Sub
         End If
     End If
@@ -130,12 +125,10 @@ Sub BeginFight(starPoint, isSkipAmbush)
         '这里需要进行判断是否切换舰队
         If gFightTimes < g_CHANGE_FLEET_SETTING_TIMES Then 
             If Not CheckIsFleet2() Then
-                TracePrint "第二舰队次数未满，当前为第2舰队，切换舰队"
                 Call ChangeBoatSetting()
             End If
         Else 
             If CheckIsFleet2() Then 
-                TracePrint "切回第一舰队"
                 Call ChangeBoatSetting()
             End If
         End If
@@ -152,7 +145,16 @@ Sub BeginFight(starPoint, isSkipAmbush)
                 iCheck = "111"
                 Exit Do
             Else 
-                Call GameClickByConfig("选择关卡", starPoint, 0, 0)
+                If GetPosByConfig("选择关卡", starPoint) <> "" Then 
+                    Dim configPos
+                    configPos = Split(GetPosByConfig("选择关卡", starPoint), "|")
+                    If SearchEnemy(configPos(0), configPos(1), 250, 250) Then 
+                        If CheckEnemy(isSkipAmbush) Then 
+                            iCheck = "222"
+                            Exit Do
+                        End If
+                    End If
+                End If        
                 
                 '防止回到起始坐标时遇到敌人
                 If CheckIsInEnterFightPnl() Then 
@@ -173,8 +175,7 @@ Sub BeginFight(starPoint, isSkipAmbush)
             End If
         End If
         iOvertimeValue = iOvertimeValue + 1
-    Loop
-    
+    Loop    
     TracePrint "跳出循环：" & Time() & "---" & iCheck
 End Sub
 
@@ -189,9 +190,22 @@ End Function
 
 '检查敌人进入战斗，参数为是否跳过空袭
 Function CheckEnemy(isSkipAmbush)
-    Dim enemyPicName
-    enemyPicName = Array("enemy0.bmp", "enemy1.bmp")
-	
+    Dim enemyPicName, picPos
+    enemyPicName = Array("enemy0.bmp", "enemy1.bmp")	
+    
+    If FindEnemyPic() <> "" Then 
+        picPos = Split(FindEnemyPic(), "|")
+        Call MoveAndClick(picPos(0), picPos(1), 200, 8000)
+        Call CheckAmbush(isSkipAmbush)
+        If CheckIsInEnterFightPnl() Then 
+            Call GameClickByConfig("战斗", "开始战斗", 0, 0)
+            Call Fight()
+        End If
+        CheckEnemy = True
+        Exit Function
+    End If
+
+/*    
     For Each enemyPic In enemyPicName
         FindPic gL + 120, gT + 130, gL + 950, gT + 595, "Attachment:\enemy0.bmp", 0.1, intX, intY
         If intX > 0 And intY > 0 Then 
@@ -205,6 +219,7 @@ Function CheckEnemy(isSkipAmbush)
             Exit Function
         End If
     Next
+*/    
     CheckEnemy = False
 End Function
 
@@ -229,7 +244,6 @@ End Function
 '检查是否被空袭，并选择是否迎击，参数为是否迎击
 Sub CheckAmbush(isSkipAmbush)
     If GameFindPic(405, 375, 585, 425, "Attachment:\迎击.bmp", 0.5) Then 
-        TracePrint "进入规避了"
         If isSkipAmbush Then 
             Call GameClickByConfig("战斗", "规避", 0, 0)
             Delay 3000
@@ -286,6 +300,55 @@ Sub ChangeBoatSetting()
     Delay 5000
 End Sub
 
+Function SearchEnemy(starPointX, starPointY, offectX, offectY)
+    Call GameMove(starPointX, starPointY, 500)
+    LeftDown 1
+    Delay 800
+    Dim x, y
+    For i = 1 To 4
+        x = 0
+        y = 0   	
+        Select Case i
+        Case 1
+            x = -1
+        Case 2
+            y = -1
+        Case 3
+            y = 1
+        Case 4
+            x = 1
+        End Select
+    	
+        Call GameMove(starPointX + x * offectX, starPointY + y * offectY, 800)
+        If FindEnemyPic() <> "" Then 
+            LeftUp 1
+            SearchEnemy = True
+            Exit Function
+        End If    	
+    Next
+    LeftUp 1
+    SearchEnemy = False
+End Function
+
+Function FindEnemyPic()
+    Dim enemyPicName
+    enemyPicName = Array("enemy0.bmp", "enemy1.bmp")	
+    For Each enemyPic In enemyPicName
+        FindPic gL + 120, gT + 130, gL + 980, gT + 620, "Attachment:\enemy0.bmp", 0.1, intX, intY
+        If intX > 0 And intY > 0 Then 
+            FindEnemyPic = intX & "|" & intY
+            Exit Function
+        End If
+    Next
+    FindEnemyPic = ""
+End Function
+
+Sub GameMove(x, y, moveDelay)
+    MoveTo gL + x, gT + y
+    Delay moveDelay
+End Sub
+
+
 '移动点击
 Sub MoveAndClick(x, y, moveDelay, clickDealy)
     MoveTo x, y
@@ -293,6 +356,11 @@ Sub MoveAndClick(x, y, moveDelay, clickDealy)
     LeftClick 1
     Delay clickDealy
 End Sub
+
+
+
+
+
 
 '根据传进来的系统和作用点击坐标，systemName为系统名，forDoWhat为作用，moveDelay为移动后的颜色，clickDealy为点击后的延时，调用函数时2者默认填0，函数会根据表去确定延时，也可以随时更改
 Sub GameClickByConfig(systemName, forDoWhat, moveDelay, clickDealy)
@@ -302,7 +370,6 @@ Sub GameClickByConfig(systemName, forDoWhat, moveDelay, clickDealy)
         TracePrint "没有对应的按钮配置信息: systemName = " & systemName & " ,  forDoWhat = " & forDoWhat
         EndScript
     End If
-    
     coordArr = Split(coords, "|")
     
     '如果延时传0，则替换表内的默认延时
@@ -314,6 +381,20 @@ Sub GameClickByConfig(systemName, forDoWhat, moveDelay, clickDealy)
     End If
     Call GameMoveAndClick(coordArr(0), coordArr(1), moveDelay, clickDealy)
 End Sub
+
+Function GetPosByConfig(systemName, forDoWhat)
+    Dim text, textArr
+    text = GetTxtString(COORDINATES_FOLDER_PATH & "\" & systemName & ".txt")
+    textArr = Split(text, "|")
+    Dim i
+    For i = 0 To UBound(textArr) - 1 Step 5
+        If forDoWhat = textArr(i + 4) Then 
+            GetPosByConfig = textArr(i) & "|" & textArr(i + 1)
+            Exit Function
+        End If
+    Next
+    GetPosByConfig = ""
+End Function
 
 '获取对应系统和作用按钮的x，y坐标，移动延时，点击延时（返回以"|"连接的字符串），无则返回空字符串，systemName为系统名，forDoWhat为作用
 Function GetCoordinates(systemName, forDoWhat)
@@ -329,7 +410,6 @@ Function GetCoordinates(systemName, forDoWhat)
     Next
     GetCoordinates = ""
 End Function
-
 
 '循环输入指令，会读取目标路径txt文件的数据依次输入进行测试,参数为指令文件路径，必须为txt文本, orderStarKwd为开始读取的文本内容
 Sub InputOrderFormTxt(orderPath, orderStarKwd)

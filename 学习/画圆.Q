@@ -23,7 +23,7 @@ SetupOCXFile=
 [Comment]
 
 [UIPackage]
-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
+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
 
 
 [Script]
@@ -35,7 +35,7 @@ UEsDBBQAAgAIAFCP2kq1avs9sAUAAAhIAAAJABEAVUlQYWNrYWdlVVQNAAdQS1FZUEtRWVBLUVntW2tT
 //Call Test(500, 600, 30, 30, "下", "顺时针", 2)
 //Call Test(800, 600, 30, 30, "左", "顺时针", 2)
 //Call Test(1100, 600, 30, 30, "右", "顺时针", 2)
-Call Test(1100, 600, 30, 30, "上", "顺时针", 2, 10)
+//Call Test(1100, 600, 30, 30, "上", "顺时针", 2, 10)
 
 Sub Test(starPointX, starPointY, offectLengthX, offectLengthY, directionValue, rotationType, rotationTimes, posNums)
     '
@@ -213,11 +213,43 @@ End Sub
 
 
 
+ddd = SearchEnemy(1000, 500, 100, 100)
 
-
-
-
-
+Function SearchEnemy(starPointX, starPointY, offectX, offectY)
+    //Call GameMove(starPointX, starPointY, 500)
+    //LeftDown 1
+    MoveTo starPointX, starPointY
+    Delay 2000
+    
+    Dim x, y
+    For i = 1 To 4
+        x = 0
+        y = 0   	
+        Select Case i
+        Case 1
+            x = -1
+        Case 2
+            y = -1
+        Case 3
+            y = 1
+        Case 4
+            x = 1
+        End Select
+    	
+    	//Call GameMove(starPointX + x * offectX, starPointY + y * offectY, 800)
+    	MoveTo starPointX + x * offectX, starPointY + y * offectY
+    	Delay 2000
+    	
+    	/*If FindEnemyPic() <> "" Then 
+    		LeftUp 1
+    		SearchEnemy = True
+    		Exit Function
+    	End If
+    	   	*/
+    Next
+    //LeftUp 1
+    SearchEnemy = False
+End Function
 
 
 
