@@ -47,7 +47,7 @@ gB = Clng(clientCoordinates(3))
 
 '************************* 运行区域 ***************************
 Const g_CHANGE_FLEET_SETTING_TIMES = 4
-Const g_TIMES = 5
+Const g_TIMES = 10
 Call AutoSalvageBoat(3, "关卡03-04", "起始坐标03-04", g_TIMES)
 gFightTimes = 0
 gRetreatTimes = 0
@@ -71,7 +71,6 @@ Sub AutoSalvageBoat(chapter, fightId, starPoint, iTimes)
                 Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                 Call Fight()
             Else 
-                TracePrint "为毛我退出来了？"
                 Exit Do
             End If
         Loop
@@ -116,9 +115,6 @@ Sub BeginFight(starPoint, isSkipAmbush)
 	
     Dim iOvertimeValue
     iOvertimeValue = 0
-    
-    Dim iCheck
-    iCheck = 0
     Do
         '是否被空袭
         Call CheckAmbush(isSkipAmbush)                
@@ -134,7 +130,7 @@ Sub BeginFight(starPoint, isSkipAmbush)
         End If
         
         '超时判断
-        If iCheck >= 5 Then 
+        If iOvertimeValue >= 4 Then 
             Call GameClickByConfig("战斗", "撤退", 0, 0)
             Call GameClickByConfig("战斗", "撤退确认", 0, 0)
             gRetreatTimes = gRetreatTimes + 1
@@ -166,7 +162,6 @@ Sub BeginFight(starPoint, isSkipAmbush)
                 If CheckIsInEnterFightPnl() Then 
                     Call GameClickByConfig("战斗", "开始战斗", 0, 0)
                     Call Fight()
-                    iCheck = "222"
                     Exit Do
                 End If
                 
@@ -181,7 +176,6 @@ Sub BeginFight(starPoint, isSkipAmbush)
             End If
         End If
         iOvertimeValue = iOvertimeValue + 1
-        iCheck = iCheck + 1
     Loop    
     TracePrint "跳出循环：" & Time() & "---" & iCheck
 End Sub
