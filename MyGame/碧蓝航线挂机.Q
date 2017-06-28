@@ -47,7 +47,7 @@ gB = Clng(clientCoordinates(3))
 
 '************************* 运行区域 ***************************
 Const g_CHANGE_FLEET_SETTING_TIMES = 4
-Const g_TIMES = 10
+Const g_TIMES = 5
 Call AutoSalvageBoat(3, "关卡03-04", "起始坐标03-04", g_TIMES)
 gFightTimes = 0
 gRetreatTimes = 0
@@ -118,7 +118,7 @@ Sub BeginFight(starPoint, isSkipAmbush)
     iOvertimeValue = 0
     
     Dim iCheck
-    iCheck = ""
+    iCheck = 0
     Do
         '是否被空袭
         Call CheckAmbush(isSkipAmbush)                
@@ -133,16 +133,23 @@ Sub BeginFight(starPoint, isSkipAmbush)
             End If
         End If
         
+        '超时判断
+        If iCheck >= 5 Then 
+            Call GameClickByConfig("战斗", "撤退", 0, 0)
+            Call GameClickByConfig("战斗", "撤退确认", 0, 0)
+            gRetreatTimes = gRetreatTimes + 1
+            Call Plugin.Msg.Tips("我撤退了！次数为：" & gRetreatTimes & "次")
+            Exit Do 
+        End If
+        
         '检查敌人并进入战斗
         If CheckEnemy(isSkipAmbush) Then 
-            iCheck = "000"
             Exit Do
         Else 
             Call ChangeBoatSetting()
             Call ChangeBoatSetting()
             
             If CheckEnemy(isSkipAmbush) Then 
-                iCheck = "111"
                 Exit Do
             Else 
                 If GetPosByConfig("选择关卡", starPoint) <> "" Then 
@@ -150,7 +157,6 @@ Sub BeginFight(starPoint, isSkipAmbush)
                     configPos = Split(GetPosByConfig("选择关卡", starPoint), "|")
                     If SearchEnemy(configPos(0), configPos(1), 250, 250) Then 
                         If CheckEnemy(isSkipAmbush) Then 
-                            iCheck = "222"
                             Exit Do
                         End If
                     End If
@@ -175,6 +181,7 @@ Sub BeginFight(starPoint, isSkipAmbush)
             End If
         End If
         iOvertimeValue = iOvertimeValue + 1
+        iCheck = iCheck + 1
     Loop    
     TracePrint "跳出循环：" & Time() & "---" & iCheck
 End Sub
